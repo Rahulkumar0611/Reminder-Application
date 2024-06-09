@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daily Reminder Application</h1>
+    <div class="reminder-container">
+        <label for="day">Select Day of the Week:</label>
+        <select id="day">
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+        </select>
+
+        <div class="reminder">
+            <label for="wake-up-time">Wake Up:</label>
+            <input type="time" id="wake-up-time">
+        </div>
+
+        <div class="reminder">
+            <label for="gym-time">Go to Gym:</label>
+            <input type="time" id="gym-time">
+        </div>
+
+        <div class="reminder">
+            <label for="breakfast-time">Breakfast:</label>
+            <input type="time" id="breakfast-time">
+        </div>
+
+        <div class="reminder">
+            <label for="meetings-time">Meetings:</label>
+            <input type="time" id="meetings-time">
+        </div>
+
+        <div class="reminder">
+            <label for="lunch-time">Lunch:</label>
+            <input type="time" id="lunch-time">
+        </div>
+
+        <div class="reminder">
+            <label for="nap-time">Quick Nap:</label>
+            <input type="time" id="nap-time">
+        </div>
+
+        <div class="reminder">
+            <label for="library-time">Go to Library:</label>
+            <input type="time" id="library-time">
+        </div>
+
+        <div class="reminder">
+            <label for="dinner-time">Dinner:</label>
+            <input type="time" id="dinner-time">
+        </div>
+
+        <div class="reminder">
+            <label for="sleep-time">Go to Sleep:</label>
+            <input type="time" id="sleep-time">
+        </div>
+
+        <button onclick="setReminders()">Set Reminders</button>
+    </div>
+
+    <audio id="reminder-sound" src="chime.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
